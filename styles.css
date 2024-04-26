@@ -5,6 +5,11 @@ body{
 
 }
 
+body, header{
+  background-color: var(--dark);
+  
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -15,28 +20,27 @@ html {
 
 body {
   padding: 20px;
-  margin: 0px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex-wrap: wrap;
+  justify-content: space-between ;
   height: 100%;
-  background-color: var(--dark);
+  box-sizing: border-box;
+
 }
 
 .contentContainer {
   display: flex;
   flex-direction: row;
-  flex: 1;
-  /* height: 100%; */
-  /* gap: 30px; */
-  flex-wrap: wrap;
+  gap: 15px;
+  flex-grow: 1;
 }
 
 header {
-  background-color: var(--dark);
+
   color: white;
-  height:200px;
+  height:150px;
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -57,7 +61,8 @@ header {
 
 .content {
   display: flex;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
+  align-self: stretch;
 }
 
 footer {
@@ -77,10 +82,6 @@ footer {
 
 
 @media screen and (max-width: 850px){
-  body {
-    /* background-color:aquamarine */
-    
-  }
   .contentContainer{
     display: flex;
     flex-direction: column;

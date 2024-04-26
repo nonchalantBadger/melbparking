@@ -160,7 +160,7 @@ function fetchData(url) {
 window.onload = function (){
   createMap()
   
-  apiStringList = createUrlList(300,3,1)
+  apiStringList = createUrlList(1,3,1)
 
   apiStringList.forEach(parkingSpot => {
     
@@ -171,3 +171,5 @@ window.onload = function (){
   });
   console.log(totalParkingSpots)
 }
+
+
